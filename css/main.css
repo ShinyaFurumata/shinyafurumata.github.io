@@ -121,7 +121,8 @@ body {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  color: #514c47; }
+  color: #514c47;
+  background-color: #f1f1f1; }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   body {
@@ -152,6 +153,18 @@ a {
 
 .breadcrumb a {
   text-decoration: underline; }
+
+#Header {
+  background: #fff;
+  padding: 10px 0 5px 0;
+  border-bottom: solid 1px #ccc; }
+  #Header .title {
+    width: 180px; }
+    #Header .title .logo {
+      float: left; }
+    #Header .title h1 {
+      margin-top: 10px;
+      float: right; }
 
 /*--------------------------------------------------------------------------
  *   Content
@@ -205,6 +218,10 @@ a {
  *----------------------------------------------------------------- */
 /* (例) レイアウト枠
  *----------------------------------------------------------------- */
+.inner {
+  width: 980px;
+  margin: 0 auto; }
+
 /* (例) リスト
  *----------------------------------------------------------------- */
 /*--------------------------------------------------------------------------
@@ -1518,5 +1535,24 @@ a {
   .highlight .il {
     color: #009999; }
 
-.hoge {
-  position: relative; }
+#home h1 {
+  font-size: 24px;
+  text-align: center;
+  padding: 10px 0; }
+
+#home .posts {
+  background: #fff;
+  border: solid 1px #ccc;
+  border-radius: 5px; }
+  #home .posts .article {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc; }
+    #home .posts .article .title {
+      font-size: 20px;
+      color: #4078c0;
+      font-weight: bold; }
+  #home .posts .article:last-child {
+    border-bottom: none; }
+  #home .posts .date {
+    color: #ccc;
+    font-size: 12px; }

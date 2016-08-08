@@ -28,7 +28,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 
 
 /*--------------------- sass [sass] --------------------*/
-gulp.task("sass", function() {
+gulp.task("sass", ['jekyll-build'] ,function() {
   gulp.src("./_sass/main.sass")
     .pipe(plumber())
     .pipe(sass({pretty: true}))
@@ -47,7 +47,7 @@ gulp.task("server", function() {
 });
 
 gulp.task('watch', function () {
-    gulp.watch('_sass/*.sass', ['sass']);
+    gulp.watch('_sass/**/*.sass', ['sass']);
     gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html' ,'_posts/*'], ['jekyll-rebuild']);
 });
 
