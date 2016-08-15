@@ -31,7 +31,10 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 gulp.task("sass", ['jekyll-build'] ,function() {
   gulp.src("./_sass/main.sass")
     .pipe(plumber())
-    .pipe(sass({pretty: true}))
+    .pipe(sass({
+        pretty: true,
+        outputStyle: 'compressed'
+    }))
     .pipe(autoprefixer())
     .pipe(gulp.dest("./css/"))
     .pipe(browser.reload({stream:true}));
