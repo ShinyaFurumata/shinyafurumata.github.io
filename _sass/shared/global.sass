@@ -19,6 +19,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 
 body
   line-height: 0
+  overflow: hidden
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
   display: block
@@ -183,9 +184,6 @@ a
  *   Main
  *---------------------------------------------------------------------------
 
-#Main
-  width: 980px
-  margin: 0 auto
 
 /*--------------------------------------------------------------------------
  *   Side
@@ -211,26 +209,3 @@ a
  *    -moz-box-sizing: border-box;
  *    box-sizing: border-box;
  *}
-/*--------------------------------------------------------------------------
- *	Media Query
- *---------------------------------------------------------------------------
-.sp_header, .sp
-  display: none
-
-.pc
-  display: block
-
-@media screen and (max-width: 640px)
-  body
-    min-width: 100%
-  #Post
-    width: 85%
-    h1
-      font-size: 20px
-    h2
-      font-size: 18px
-    h3
-      font-size: 16px
-  #Content
-    width: 100%
-    padding-top: 90px
