@@ -2,15 +2,14 @@
 layout: default
 title: ShinyaFurumata
 ---
-
-<div id="home">
-  <h1>Posts</h1>
-  <ul class="posts cf">
-    {% for post in site.posts %}
-      <li class="article"><a href="{{ post.url }}"><p class="title">{{ post.title }}</p>
-          <span class="octicon octicon-calendar"></span>
-          <span class="date">{{ post.date | date_to_string }}</span>
-      </a></li>
-    {% endfor %}
-  </ul>
-</div>
+            <div id="home">
+              <h1>Posts</h1>
+              <ul class="posts cf">
+                {% for post in site.posts %}
+                  <li class="article"><a href="{{ post.url }}"><p class="title">{{ post.title }}</p>
+                      <span class="octicon octicon-calendar"></span>
+                      <span class="date">{{ post.date | date_to_string }}</span>
+                  </a></li>
+                {% endfor %}
+              </ul>
+            </div>
